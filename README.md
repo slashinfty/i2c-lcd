@@ -10,13 +10,18 @@ npm install https://github.com/slashinfty/i2c-lcd
 ```
 
 ## Usage
-Example:
+Assuming the following wiring (and powered by USB):
+| Pico | LCM1602 |
+|------|---------|
+| VBUS | VCC     |
+| GND  | GND     |
+| GP2  | SDA     |
+| GP3  | SCL     |
+
 ```js
 const {LCD} = require('lcd');
 const lcd = new LCD();
 lcd.begin();
-lcd.printLine(0, 'Hello');
-lcd.printLine(1, 'World');
 ```
 
 ## Examples
