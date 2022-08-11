@@ -1,5 +1,5 @@
 # i2c-lcd
-Kaluma library for liquid crystal display with PCF8574 I2C port expander
+Kaluma library for liquid crystal display with PCF8574 I2C port expander (LCM1602 module)
 
 ## Prerequisite
 [Get Kaluma](https://kalumajs.org/docs/getting-started)
@@ -18,6 +18,9 @@ lcd.begin();
 lcd.printLine(0, 'Hello');
 lcd.printLine(1, 'World');
 ```
+
+## Examples
+Coming soon.
 
 ## API - Class: LCD
 - **constructor ( bus : int, address : int, width : int, height : int )**
@@ -44,7 +47,7 @@ lcd.printLine(1, 'World');
 - **scrollDisplayRight ()** - Scrolls the contents of the display (text and cursor) one space to the right.
 - **leftToRight ()** - Sets the direction for text written to the LCD to left-to-right, the default.
 - **rightToLeft ()** - Sets the direction for text written to the LCD to right-to-left.
-- **createChar ( id : int, dots : array of int )** - Creates a custom character (glyph) for use on the LCD. Up to eight characters of 5x8 pixels are supported (id 0 to 7). The appearance of each custom character is specified by an array of eight bytes, one for each row. The five least significant bits of each byte determine the pixels in that row. To display a custom character on the screen, use `print(LCD.getChar(id))`.
+- **createChar ( id : int, dots : array of int )** - Creates a custom character (glyph) for use on the LCD. Up to eight characters of 5x8 pixels are supported (id 0 to 7). The appearance of each custom character is specified by an array of eight bytes, one for each row. The five least significant bits of each byte determine the pixels in that row. To display a custom character on the screen, use `print(LCD.getChar(id))`. For more information on creating characters, check out [this tool](https://www.quinapalus.com/hd44780udg.html).
 
 ## Inspiration
 - [raspberrypi-liquid-crystal](https://github.com/kevincastejon/js-raspberrypi-liquid-crystal) (npm package)
