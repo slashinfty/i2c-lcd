@@ -2,7 +2,7 @@
   "name": "i2c-lcd",
   "version": "1.0.0",
   "description": "Kaluma library for liquid crystal display with PCF8574 I2C port expander ",
-  "main": "index.js",
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/slashinfty/i2c-lcd.git"
