@@ -31,12 +31,12 @@ Coming soon.
 ### Constructor
 - `new LCD(busNumber, address, cols, rows)`
 
-| Name      | Type | Default |
-|-----------|------|---------|
-| busNumber | int  | 1       |
-| address   | int  | 0x27    |
-| cols      | int  | 16      |
-| rows      | int  | 2       |
+| Name      | Default | Description                    |
+|-----------|---------|--------------------------------|
+| busNumber | 1       | bus number of the i2c device   |
+| address   | 0x27    | address of the i2c device      |
+| cols      | 16      | character width of the display |
+| rows      | 2       | number of lines in the display  |
 ### Properties (read-only)
 - `busNumber`
     - the bus number declared when instantiating the LCD object
