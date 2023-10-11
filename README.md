@@ -19,7 +19,7 @@ Assuming the following wiring (and powered by USB):
 | GP3  | SCL     |
 
 ```js
-const { LCD } = require('lcd');
+const { LCD } = require('i2c-lcd');
 const lcd = new LCD();
 lcd.begin();
 ```
